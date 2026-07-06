@@ -3,139 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal UI/UX Portfolio</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts for modern typography -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Custom 10% CSS for Colors, Hover, Patterns, and Footer Elements -->
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #ffffff;
-            color: #1e1e1e;
-            overflow-x: hidden;
-        }
-        /* Sticky navbar styling */
-        .custom-nav {
-            background-color: #1a1a1a !important;
-            border-radius: 50px;
-            padding: 10px 30px;
-        }
-        /* Premium Pink Accent Colors */
-        .text-pink {
-            color: #ff74a6 !important;
-        }
-        .bg-pink {
-            background-color: #ff74a6 !important;
-        }
-        .border-pink {
-            border-color: #ff74a6 !important;
-        }
-        .btn-pink {
-            background-color: #ff74a6;
-            color: white;
-            border-radius: 30px;
-            padding: 12px 28px;
-            font-weight: 600;
-            border: none;
-            transition: 0.3s ease;
-        }
-        .btn-pink:hover {
-            background-color: #e05387;
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(255, 116, 166, 0.3);
-        }
-        
-        /* HERO ELEMENTS */
-        .hero-bg {
-            position: relative;
-            background-image: radial-gradient(rgba(255, 116, 166, 0.06) 1.5px, transparent 1.5px);
-            background-size: 24px 24px;
-            padding-top: 140px;
-            padding-bottom: 60px;
-        }
-        .avatar-glow-ring {
-            position: relative;
-            width: 320px;
-            height: 320px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #ff74a6 0%, #ffffff 100%);
-            padding: 8px;
-            box-shadow: 0 20px 40px rgba(255, 116, 166, 0.15);
-        }
-        .floating-badge {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(0,0,0,0.05);
-            padding: 10px 18px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            font-weight: 600;
-            font-size: 0.85rem;
-        }
-        .badge-1 { top: 15%; left: -10%; }
-        .badge-2 { bottom: 15%; right: -10%; }
-
-        /* Dark Card Section Styling */
-        .dark-section {
-            background-color: #141414;
-            color: #ffffff;
-            border-radius: 40px;
-        }
-        /* Portfolio card smooth animations */
-        .portfolio-card {
-            border: none;
-            border-radius: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .portfolio-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 20px rgba(255, 116, 166, 0.2);
-        }
-        .progress {
-            height: 8px;
-            border-radius: 10px;
-        }
-
-        /* ENHANCED FOOTER STYLING */
-        .footer-link {
-            color: #b3b3b3;
-            text-decoration: none;
-            transition: color 0.3s ease, padding-left 0.3s ease;
-        }
-        .footer-link:hover {
-            color: #ff74a6 !important;
-            padding-left: 6px;
-        }
-        .social-circle {
-            width: 42px;
-            height: 42px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: #222222;
-            color: #ffffff;
-            text-decoration: none;
-            transition: 0.3s ease;
-            border: 1px solid #333333;
-        }
-        .social-circle svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
-            transition: fill 0.3s ease;
-        }
-        .social-circle:hover {
-            background: #ff74a6;
-            color: #ffffff !important;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(255, 116, 166, 0.3);
-        }
-    </style>
 </head>
 <body>
 
@@ -144,7 +16,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark custom-nav shadow">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold fs-4" href="#">
-                    <span class="bg-pink text-white rounded-circle px-2 py-1 me-2 fs-6">OS</span>SAIKAT
+                    <span class="bg-pink text-white rounded-circle px-2 py-1 me-2 fs-6">JS</span>SAHAANAA
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -152,23 +24,23 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav gap-2">
                         <li class="nav-item"><a class="nav-link active btn-pink px-3 py-1 text-white text-center" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white text-center" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-white text-center" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link text-white text-center" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link text-white text-center" href="#testimonials">Reviews</a></li>
-                        <li class="nav-item"><a class="nav-link text-white text-center" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active btn-pink px-3 py-1 text-white text-center" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link active btn-pink px-3 py-1 text-white text-center" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link active btn-pink px-3 py-1 text-white text-center" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active btn-pink px-3 py-1 text-white text-center" href="#testimonials">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link active btn-pink px-3 py-1 text-white text-center" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- 2. ENHANCED HERO SECTION -->
+    <!-- 2. HERO SECTION -->
     <section id="home" class="hero-bg min-vh-100 d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center g-5 flex-column-reverse flex-lg-row">
                 <div class="col-lg-7 text-center text-lg-start">
-                    <div class="d-inline-flex align-items-center gap-2 border border-pink border-opacity-25 bg-pink bg-opacity-10 text-pink px-3 py-2 rounded-pill mb-4 fw-semibold small">
+                    <div class="d-inline-flex align-items-center gap-2 border border-pink border-opacity-25 bg-pink bg-opacity-10 text-white px-3 py-2 rounded-pill mb-4 fw-semibold small">
                         <span>👋 Available For Freelance Project</span>
                     </div>
                     <h1 class="display-3 fw-extrabold lh-tight mb-3">
@@ -176,7 +48,7 @@
                         Digital <span class="text-pink">Experiences</span>
                     </h1>
                     <p class="lead text-muted mb-4 fs-5 me-xl-5">
-                        I'm <strong class="text-dark">Ohidul Islam Saikat</strong>, a passionate UI/UX Designer dedicated to crafting interactive layouts, clean structures, and converting designs.
+                        I'm <strong class="text-dark">Jayanthan Sahaanaa</strong>, a passionate UI/UX Designer dedicated to crafting interactive layouts, clean structures, and converting designs.
                     </p>
                     <div class="d-flex gap-3 justify-content-center justify-content-lg-start align-items-center">
                         <a href="#projects" class="btn btn-pink shadow-sm">View Portfolio &nearr;</a>
@@ -190,7 +62,7 @@
                         <div class="floating-badge badge-2">✨ Figma Expert</div>
                         <div class="avatar-glow-ring">
                             <div class="w-100 h-100 rounded-circle overflow-hidden bg-light">
-                                <img src="https://via.placeholder.com/320x320" alt="Ohidul Islam Saikat" class="img-fluid w-100 h-100 object-fit-cover">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Jayanthan Sahaanaa" class="img-fluid w-100 h-100 object-fit-cover">
                             </div>
                         </div>
                     </div>
@@ -204,7 +76,7 @@
         <div class="row align-items-center g-5">
             <div class="col-lg-5 text-center">
                 <div class="bg-pink rounded-5 p-2 shadow-sm d-inline-block w-100" style="max-width: 400px; height: 450px; overflow: hidden;">
-                    <img src="https://via.placeholder.com/400x450" alt="Saikat Profile View" class="img-fluid rounded-5 w-100 h-100 object-fit-cover">
+                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=500&q=80" alt="sahavex studio workspace" class="img-fluid rounded-5 w-100 h-100 object-fit-cover">
                 </div>
             </div>
             
@@ -215,19 +87,19 @@
                 </p>
                 
                 <div class="p-3 bg-light rounded-4 border-start border-pink border-5 shadow-sm mb-4">
-                    <h4 class="fw-bold mb-1">01 Years</h4>
+                    <h4 class="fw-bold mb-1">01 Year</h4>
                     <p class="text-muted text-uppercase small tracking-wider mb-0">Experience In Digital Design Field</p>
                 </div>
 
                 <div class="row g-3">
                     <div class="col-sm-6">
-                        <div class="p-3 border rounded-4 bg-light shadow-sm">
+                        <div class="p-3 border rounded-4 bg shadow-sm">
                             <h4 class="fw-bold text-pink mb-1">450+</h4>
                             <p class="text-muted mb-0 small">Projects Completed</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="p-3 border rounded-4 bg-light shadow-sm">
+                        <div class="p-3 border rounded-4 bg shadow-sm">
                             <h4 class="fw-bold text-pink mb-1">25+</h4>
                             <p class="text-muted mb-0 small">Winning Awards</p>
                         </div>
@@ -301,35 +173,38 @@
                 </div>
                 
                 <div class="row g-4">
+                    <!-- Project 1: Mobile App UI Image -->
                     <div class="col-lg-4 col-md-6">
-                        <div class="card bg-dark text-white portfolio-card h-100 border border-secondary">
-                            <img src="https://via.placeholder.com/400x300" class="card-img-top rounded-top-4" alt="UIUX Design Project">
+                        <div class="card bg-dark text-white portfolio-card h-100 border border-secondary overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Mobile App Design Portfolio" style="height: 240px; object-fit: cover;">
                             <div class="card-body p-4">
                                 <span class="badge bg-pink text-white mb-2">UI/UX Design</span>
                                 <h4 class="card-title fw-bold">Moodly Mobile App</h4>
-                                <p class="card-text text-muted small">Modern music platform designed with responsive interactive UI components.</p>
+                                <p class="card-text text-white small">Modern music platform designed with responsive interactive UI components.</p>
                                 <a href="https://github.com" target="_blank" class="text-pink text-decoration-none fw-semibold">View Case Study &rarr;</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Project 2: Corporate Agency Site Layout Image -->
                     <div class="col-lg-4 col-md-6">
-                        <div class="card bg-dark text-white portfolio-card h-100 border border-secondary">
-                            <img src="https://via.placeholder.com/400x300" class="card-img-top rounded-top-4" alt="Web Design Concept">
+                        <div class="card bg-dark text-white portfolio-card h-100 border border-secondary overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Web Design Project Portfolio" style="height: 240px; object-fit: cover;">
                             <div class="card-body p-4">
                                 <span class="badge bg-pink text-white mb-2">Web Design</span>
                                 <h4 class="card-title fw-bold">Creative Agency Site</h4>
-                                <p class="card-text text-muted small">Highly optimized marketing and landing template designed for modern scale.</p>
+                                <p class="card-text text-white small">Highly optimized marketing and landing template designed for modern scale.</p>
                                 <a href="https://github.com" target="_blank" class="text-pink text-decoration-none fw-semibold">View Live Demo &rarr;</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Project 3: Dashboard/Portal Wireframe Image -->
                     <div class="col-lg-4 col-md-6 mx-md-auto">
-                        <div class="card bg-dark text-white portfolio-card h-100 border border-secondary">
-                            <img src="https://via.placeholder.com/400x300" class="card-img-top rounded-top-4" alt="Landing Page Layout">
+                        <div class="card bg-dark text-white portfolio-card h-100 border border-secondary overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Dashboard System Interface Portfolio" style="height: 240px; object-fit: cover;">
                             <div class="card-body p-4">
                                 <span class="badge bg-pink text-white mb-2">Landing Page</span>
                                 <h4 class="card-title fw-bold">SafeStay Student Portal</h4>
-                                <p class="card-text text-muted small">User-centric landing system engineered and crafted for student utilities.</p>
+                                <p class="card-text text-white small">User-centric landing system engineered and crafted for student utilities.</p>
                                 <a href="https://github.com" target="_blank" class="text-pink text-decoration-none fw-semibold">View Repository &rarr;</a>
                             </div>
                         </div>
@@ -345,14 +220,15 @@
             <div class="container">
                 <div class="mb-5">
                     <h2 class="display-5 fw-bold text-white">Testimonials That <span class="text-pink">Speak to My Results</span></h2>
-                    <p class="text-muted max-w-md mx-auto">Don't just take my word for it. Here is what partners and clients say about our collaboration.</p>
+                    <p class="text-white max-w-md mx-auto">Don't just take my word for it. Here is what partners and clients say about our collaboration.</p>
                 </div>
 
                 <div class="row g-4 text-start">
+                    <!-- Client 1 Portrait -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card bg-dark text-white p-4 h-100 border border-secondary rounded-4 portfolio-card">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="https://via.placeholder.com/50x50" alt="Client Avatar" class="rounded-circle me-3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80" alt="Joinal Abedin Nishad Portrait" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
                                 <div>
                                     <h5 class="mb-0 fw-bold small">Joinal Abedin Nishad</h5>
                                     <p class="text-pink small mb-0">Ui Ux Designer</p>
@@ -365,10 +241,11 @@
                         </div>
                     </div>
 
+                    <!-- Client 2 Portrait -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card bg-dark text-white p-4 h-100 border border-secondary rounded-4 portfolio-card">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="https://via.placeholder.com/50x50" alt="Client Avatar" class="rounded-circle me-3">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100&q=80" alt="Fawzi Sayed Portrait" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
                                 <div>
                                     <h5 class="mb-0 fw-bold small">Fawzi Sayed</h5>
                                     <p class="text-pink small mb-0">Ui Ux Designer</p>
@@ -381,10 +258,11 @@
                         </div>
                     </div>
 
+                    <!-- Client 3 Portrait -->
                     <div class="col-md-6 col-lg-4 mx-auto">
                         <div class="card bg-dark text-white p-4 h-100 border border-secondary rounded-4 portfolio-card">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="https://via.placeholder.com/50x50" alt="Client Avatar" class="rounded-circle me-3">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&h=100&q=80" alt="Ohidul Islam Portrait" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
                                 <div>
                                     <h5 class="mb-0 fw-bold small">Ohidul Islam</h5>
                                     <p class="text-pink small mb-0">Product Designer</p>
@@ -423,7 +301,7 @@
                             <textarea class="form-control rounded-3" rows="4" placeholder="Briefly describe your awesome project goals..." required></textarea>
                         </div>
                         <div class="col-12 text-center mt-4">
-                            <button type="submit" class="btn btn-pink w-100 py-3 rounded-3 fs-5 shadow">Send Message &rarr;</button>
+                            <button type="submit" class="btn-pink w-100 py-3 rounded-3 fs-5 shadow">Send Message &rarr;</button>
                         </div>
                     </div>
                 </form>
@@ -431,7 +309,7 @@
         </div>
     </section>
 
-    <!-- 8. HIGHLY ENHANCED MULTI-COLUMN FOOTER WITH BRAND SVG ICONS -->
+    <!-- 8. FOOTER WITH BRAND SVG ICONS & FILLED CONTACT INFO -->
     <footer class="bg-dark text-white pt-5 mt-5 rounded-top-5">
         <div class="container py-4">
             <div class="row g-4 justify-content-between">
@@ -441,11 +319,11 @@
                     <h4 class="fw-bold text-white mb-3">
                         <span class="bg-pink text-white rounded-circle px-2 py-1 me-2 fs-6">OS</span>SAIKAT
                     </h4>
-                    <p class="text-muted small lh-lg">
+                    <p class="text small lh-lg">
                         Specializing in modern web layouts, interactive interfaces, and pixel-perfect design assets built organically structure-by-structure.
                     </p>
                     
-                    <!-- SVG Icons instead of plain alphabetical character layouts -->
+                    <!-- SVG Icons instead of plain text letters -->
                     <div class="d-flex gap-2 mt-4">
                         <!-- LinkedIn SVG Wrapper -->
                         <a href="https://linkedin.com" target="_blank" class="social-circle" title="LinkedIn">
@@ -488,41 +366,35 @@
                     </ul>
                 </div>
 
-                <!-- Column 4: Filled Contact Methods (Bootstrap Native Layout Components) -->
+                <!-- Column 4: Filled Contact Methods -->
                 <div class="col-lg-3 col-md-6 col-sm-4">
                     <h6 class="fw-bold text-white text-uppercase tracking-wider mb-3">Contact Info</h6>
-                    <ul class="list-unstyled d-flex flex-column gap-3 small text-muted">
-                        <!-- Email Link Frame -->
+                    <ul class="list-unstyled d-flex flex-column gap-3 small text-white">
                         <li class="d-flex align-items-center gap-2">
-                            <span class="text-pink bg-secondary bg-opacity-25 rounded-circle d-inline-flex align-items-center justify-content-center" style="width:28px; height:28px;">✉</span>
-                            <a href="mailto:saikat@example.com" class="text-muted text-decoration-none hover:text-pink">saikat@example.com</a>
+                            <span class="text-white bg-secondary bg-opacity-25 rounded-circle d-inline-flex align-items-center justify-content-center" style="width:28px; height:28px;">✉</span>
+                            <a href="mailto:saikat@example.com" class="text-white text-decoration-none hover:text-pink">saikat@example.com</a>
                         </li>
-                        <!-- Contact Phone Links Frame -->
                         <li class="d-flex align-items-center gap-2">
-                            <span class="text-pink bg-secondary bg-opacity-25 rounded-circle d-inline-flex align-items-center justify-content-center" style="width:28px; height:28px;">📞</span>
-                            <a href="tel:+8801234567890" class="text-muted text-decoration-none hover:text-pink">+880 1234 567890</a>
+                            <span class="text-white bg-secondary bg-opacity-25 rounded-circle d-inline-flex align-items-center justify-content-center" style="width:28px; height:28px;">📞</span>
+                            <a href="tel:+8801234567890" class="text-white text-decoration-none hover:text-pink">+880 1234 567890</a>
                         </li>
-                        <!-- Direct Structural Location Badges -->
                         <li class="d-flex align-items-center gap-2">
-                            <span class="text-pink bg-secondary bg-opacity-25 rounded-circle d-inline-flex align-items-center justify-content-center" style="width:28px; height:28px;">📍</span>
-                            <span>Dhaka, Bangladesh</span>
+                            <span class="text-white bg-secondary bg-opacity-25 rounded-circle d-inline-flex align-items-center justify-content-center" style="width:28px; height:28px;">📍</span>
+                            <span>Jaffna, Sri Lanka</span>
                         </li>
                     </ul>
                 </div>
 
             </div>
 
-            <!-- Horizontal Break Line -->
             <hr class="border-secondary my-4">
-
-            <!-- Copyright and Bottom Metadata Layer -->
-            <div class="row align-items-center small text-muted">
+            <div class="row align-items-center small text-white">
                 <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                    &copy; 2026 Fawziuiux / Saikat. All Rights Reserved.
+                    &copy; 2026 Sahavex / Sahaanaa. All Rights Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#home" class="text-muted text-decoration-none me-3 hover:text-pink">Privacy Policy</a>
-                    <a href="#home" class="text-muted text-decoration-none">Terms of Service</a>
+                    <a href="#home" class="text-white text-decoration-none me-3 hover:text-pink">Privacy Policy</a>
+                    <a href="#home" class="text-white text-decoration-none">Terms of Service</a>
                 </div>
             </div>
         </div>
